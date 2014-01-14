@@ -57,7 +57,7 @@ customLinks:
   - item:
     - text: xujinlai的github博客
       url: http://xujinlai.tk
-	- text: xujinlai的BAE上的博客(已暂停更新)
+    - text: xujinlai的BAE上的博客(已暂停更新)
       url: http://seeksky.duapp.com
     - text: Jekyll
       url: http://jekyllrb.com
