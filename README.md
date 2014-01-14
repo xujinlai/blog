@@ -1,4 +1,8 @@
-<<<<<<< HEAD
+##Seeksky的blog
+这是我的博客,使用的`kunka`的主题,详细见Kunka那个子块
+其中我修改了主题的部分css,和`monokai`的代码高亮css进行了整合
+并且增加了`inline code`的css,使整体更加协调好看.
+
 ##Kunka
 
 > 这只是另外一个 Jekyll 主题文件。
@@ -53,4 +57,4 @@ The documentation website at <http://jekyllbootstrap.com> is maintained at https
 ## License
 
 [MIT](http://opensource.org/licenses/MIT)
->>>>>>> b813cdaf6823f2e453e3c767156e9c479bacafdf
+
