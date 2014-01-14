@@ -11,10 +11,12 @@
 }
 
 html, body { height: 100%; }
-body, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td, hr, button, article, aside, details, figcaption, figure, footer, header, group, menu, nav, section { margin: 0; padding: 0; }
+body, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, form, fieldset, legend, input, textarea, p, blockquote, th, td, hr, button, article, aside, details, figcaption, figure, footer, header, group, menu, nav, section { margin: 0; padding: 0; }
+/*
 ul, ol {
     list-style-type: none;
 }
+*/
 body {
     background: #92b3a2 url(../images/bg.jpg) repeat 0 0;
     font-size: 14px;
@@ -31,9 +33,11 @@ p { margin: 1em 0; }
 
 a         { color: #91736b; text-decoration: none; }
 
-::-moz-selection {background: rgba(252, 252, 82,0.2)}
-::selection {background: rgba(252, 252, 82,0.2)}
 
+::-moz-selection {background: rgba(252, 252, 82,0.2)}
+/*
+::selection {background: rgba(252, 252, 82,0.2)}
+*/
 .fn-clear:after             { visibility:hidden; display:block; font-size:0; content:" "; clear:both; height:0; }
 
 /*****************************************************************************/
@@ -189,6 +193,22 @@ a         { color: #91736b; text-decoration: none; }
 .main .article li {
      line-height: 24px;
 }
+/*
+for code style inline
+2014-01-15 by xujinlai
+*/
+.main .article li code,.main .article p code,.main .article table code {
+color: #4d4d4d;
+background: #f8f8f8;
+padding: 0 0.2em;
+border: 1px solid #d8d8d8;
+border-radius: 3px 3px;
+position: relative;
+top: -2px;
+margin: 0 3px;
+box-shadow: 1px 1px 0 #999;
+}
+
 .main .article a:hover {
     border-bottom: 3px double rgba(0, 0, 0, 0.1);
 }
@@ -266,9 +286,10 @@ a         { color: #91736b; text-decoration: none; }
     margin-bottom: 1em;
     padding: 10px 10px;
     color: #4d4d4d;
-    background: rgba(0, 0, 0, 0.1);
+    background: #49483e;
     overflow: auto;
 }
+
 .main .highlight {
     position: relative;
 }
@@ -292,6 +313,7 @@ a         { color: #91736b; text-decoration: none; }
     text-align: center;
     color: rgba(255, 255, 255, 0.8);
 }
+
 
 .main .article img {
     position: relative;
@@ -731,3 +753,5 @@ a         { color: #91736b; text-decoration: none; }
     height: 80px;
     margin: 0 auto;
 }
+
+
