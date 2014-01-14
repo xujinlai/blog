@@ -5,7 +5,6 @@ description: "刚开始使用emacs修改主题以及字体"
 category: "emacs"
 tags: [emacs, font, config]
 ---
-{% include JB/setup %}
 
 ### 前言
 

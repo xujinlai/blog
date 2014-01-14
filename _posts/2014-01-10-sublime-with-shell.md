@@ -5,7 +5,6 @@ description: "在Sublime里面使用shell的插件SublimeREPL"
 category: "sublime"
 tags: [sublime, shell, SublimeREPL]
 ---
-{% include JB/setup %}
 
 ### 前言
 

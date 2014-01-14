@@ -7,7 +7,6 @@ category: jekyll
 tagline: "Supporting tagline"
 tags: [jekyll, markdown, code Highlight, github]
 ---
-{% include JB/setup %}
 
 这篇文章主要介绍如何在github pages上使用类似github的简约代码块方式编写markdown，并且包含高亮。
 

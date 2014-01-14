@@ -5,7 +5,6 @@ description: "本文讲述了我学习emacs最初的几天的心历路程"
 category: "emacs"
 tags: [emacs, tutorial, beginner, blog, github, prelude, eshell]
 ---
-{% include JB/setup %}
 
 ### 前言
 这几天终于下定决心学习使用emacs,其中有一些是必然的,另一方面也是偶然的心血来潮.
