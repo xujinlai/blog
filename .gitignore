@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 *.iml
 .idea/
 .idea/scopes/scope_settings.xml
@@ -23,3 +24,16 @@ node_modules
 _site
 sea-modules
 .cache
+=======
+_site/*
+_theme_packages/*
+quick_git.bat
+
+Thumbs.db
+.DS_Store
+
+!.gitkeep
+
+.rbenv-version
+.rvmrc
+>>>>>>> b813cdaf6823f2e453e3c767156e9c479bacafdf
