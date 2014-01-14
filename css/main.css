@@ -285,6 +285,7 @@ box-shadow: 1px 1px 0 #999;
 .main .article pre {
     margin-bottom: 1em;
     padding: 10px 10px;
+	color: #fffffb;
     background: #49483e;
     overflow: auto;
 }
