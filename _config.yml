@@ -81,9 +81,9 @@ googleAnaly:
 
 #comment config
 disqus:
-  config: true
+  config: false
   id: xujinlai
 
 duoshuo:
-  config: false
-  id: zhanxin
+  config: true
+  id: xujinlai
