@@ -46,6 +46,14 @@ sgdisk --largest-new=1 /dev/sde
 sgdisk --largest-new=1 /dev/sdf
 sgdisk --largest-new=1 /dev/sdg
 sgdisk --largest-new=1 /dev/sdh
+
+sgdisk --typecode=1:fd00 /dev/sdb
+sgdisk --typecode=1:fd00 /dev/sdc
+sgdisk --typecode=1:fd00 /dev/sdd
+sgdisk --typecode=1:fd00 /dev/sde
+sgdisk --typecode=1:fd00 /dev/sdf
+sgdisk --typecode=1:fd00 /dev/sdg
+sgdisk --typecode=1:fd00 /dev/sdh
 ```
 
 这里的sgdisk使用的几个参数分别是如下的意思:
@@ -53,6 +61,8 @@ sgdisk --largest-new=1 /dev/sdh
   + `--zap-all`是将磁盘的mrb以及GPT数据清空
   + `--mbrtogpt`在磁盘上重新写GPT数据
   + `--largest-new`是以磁盘最大大小建立一个分区,后面跟的数字是分区的标号,**注意是从1开始**
+  + `typecode`是设置分区的识别号,`fd00`表示该分区是一个`Linux RAID auto detect`分区,至于有什么区别我也说不清楚,
+  貌似是用于RAID分区的自动加载,详情参考[Autodetect - Linux Raid Wiki](https://raid.wiki.kernel.org/index.php/Autodetect)
 
 #### 3.然后使用mdadm命令建立软件RAID分区:
 
