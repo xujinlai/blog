@@ -12,6 +12,7 @@ description: seeksky 的 blog, 一个技术宅征服世界的梦想
 keywords: seeksky blog hadoop mapreduce virtualization
 url: http://xujinlai.tk
 feed: /atom.xml
+rss : /rss.xml
 favicon: /favicon.ico
 
 #Nav config
