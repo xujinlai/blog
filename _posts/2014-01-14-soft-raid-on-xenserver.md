@@ -67,7 +67,7 @@ mdadm --create /dev/md0 --level=5 --raid-devices=7 /dev/sdb1 /dev/sdc1 /dev/sdd1
   + `--lever`是指的RAID的级别,mdadm支持**0,1,5,6,10**还有其他两种软件RAID的方式,我这里由于创建RAID5分区,
   所以参数设置为5,(RAID级别的选择详见wiki:[RAID](http://zh.wikipedia.org/wiki/RAID))
   + `--raid-devices`这个是RAID使用的分区设备路径,我这里从`sdb`到`sdh`一共七个设备,参数后面跟的七个设备的路径
-  + 补充说明:这里经过我的测试,RAID5的时候mdadm默认会设置一个热备盘,所以不需要手动设置,也会有一个盘成为热备盘.
+  + 补充说明:如果需要其他设置还有一些参数可以设置,比图`--spare-devices`参数之后跟设备路径指定热备盘,另外还有`--metadata`参数后面接版本号用于指定RAID超级分区的版本,我看wiki的[RAID设置](https://raid.wiki.kernel.org/index.php/RAID_setup)里面推荐如果作为引导分区的话使用1.2版本会比较好.
 
 #### 4.查看RAID盘初始化状态,并挂载RAID盘到XenServer上.
 使用两个简单的命令就好了
