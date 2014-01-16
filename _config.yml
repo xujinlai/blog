@@ -3,6 +3,7 @@ redcarpet:
     extensions: ["fenced_code_blocks", "autolink", "tables", "strikethrough"]
 pygments: true
 paginate: 8
+permalink: /:categories/:year/:month/:day/:title 
 
 safe:  false
 
