@@ -61,7 +61,7 @@ sgdisk --typecode=1:fd00 /dev/sdh
   + `--zap-all`是将磁盘的mrb以及GPT数据清空
   + `--mbrtogpt`在磁盘上重新写GPT数据
   + `--largest-new`是以磁盘最大大小建立一个分区,后面跟的数字是分区的标号,**注意是从1开始**
-  + `typecode`是设置分区的识别号,`fd00`表示该分区是一个`Linux RAID auto detect`分区,至于有什么区别我也说不清楚,
+  + `--typecode`是设置分区的识别号,`fd00`表示该分区是一个`Linux RAID auto detect`分区,至于有什么区别我也说不清楚,
   貌似是用于RAID分区的自动加载,详情参考[Autodetect - Linux Raid Wiki](https://raid.wiki.kernel.org/index.php/Autodetect)
 
 #### 3.然后使用mdadm命令建立软件RAID分区:
@@ -91,6 +91,7 @@ watch -n 1 cat /proc/mdstat
 RAID盘信息写入mdadm的配置文件中,并将其加入XenServer的SR设备中.
 
 ```sh
+echo DEVICE /dev/sd{b-h}1 >> /etc/mdadm.conf
 mdadm --detail --scan >> /etc/mdadm.conf
 xe sr-create content-type=user device-config:device=/dev/md0 name-label="Soft Raid5 on Server02" shared=false type=lvm
 ```
