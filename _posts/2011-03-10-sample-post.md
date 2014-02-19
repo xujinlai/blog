@@ -12,6 +12,11 @@ comments: true
 share: true
 ---
 
+Test Latex:
+
+$$x^{n}+y^{n} \neq z^{n}$$ for $n \geq 3$
+
+
 Below is just about everything you'll need to style in the theme. Check the source code to see the many embedded elements within paragraphs.
 
 # Heading 1

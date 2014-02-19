@@ -20,7 +20,7 @@ image:
     {% endif %}
   </header>
   <div class="entry-content">
-    {{ post.content }}
+    {{ post.content | split:'<!--more-->' | first }}
   </div><!-- /.entry-content -->
 </article><!-- /.hentry -->
 {% endfor %}

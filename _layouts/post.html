@@ -12,6 +12,7 @@
 {% include browser-upgrade.html %}
 {% include navigation.html %}
 
+
 {% if page.image.feature %}
 <div class="entry-header">
   <div class="entry-image"><img src="{{ site.url }}/images/{{ page.image.feature }}" alt="{{ page.title }}">
@@ -47,6 +48,7 @@
           </ul>
         </div><!-- /.social-share -->{% endif %}
       </footer>
+	  
     </div><!-- /.entry-content -->
     {% if site.disqus_shortname and page.comments %}<section id="disqus_thread"></section><!-- /#disqus_thread -->{% endif %}
     {% if site.related_posts.size %}
@@ -80,6 +82,6 @@
 </div><!-- /.footer-wrapper -->
 
 {% include scripts.html %}	        
-
+<script src="{{ site.url }}/assets/js/plugins/toc-aside.js"></script>
 </body>
 </html>

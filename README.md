@@ -47,7 +47,7 @@ General notes and suggestions for customizing **HPSTR**.
 2. Clone the following files and personalize content as need: `about.md`, `archive.html`, `index.html`, `tags.html`, and `feed.xml`.
 3. Set the following variables in your `config.yml` file:
 
-``` yaml
+~~~ yaml
 title:            Site Title
 description:      Describe your website here.
 disqus_shortname: shortname
@@ -97,7 +97,7 @@ markdown:    kramdown
 
 # Amount of posts to show on home page
 paginate: 5
-```
+~~~
 
 ---
 
