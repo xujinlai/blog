@@ -40,7 +40,7 @@ bing_verify:
 links:
   - title: BAE Blog(old)
     url: http://seeksky.duapp.com
-	external: true
+    external: true
 
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 timezone:    Asia/Shanghai
