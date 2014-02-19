@@ -12,7 +12,7 @@ relative_permalinks: true
 owner:
   name:           Seeksky
   avatar:         avatar.jpg
-  bio:            "Your bio goes here. It shouldn't be super long but a good two sentences or two should suffice."
+  bio:            "My name is Xu Jinlai, you can call me Seeksky(my nickname) or Andy(my official english name). My favourite is computer and every thing related to it."
   email:          xujinlai@gmail.com
   # Social networking links used in footer. Update and remove as you like.
   twitter:        xujinlai
@@ -38,7 +38,7 @@ bing_verify:
 # Links to include in top navigation
 # For external links add external: true
 links:
-  - title: BAE Blog(old)
+  - title: BAE Blog(abandon)
     url: http://seeksky.duapp.com
     external: true
 
