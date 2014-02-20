@@ -33,6 +33,7 @@ task :new_post, :title do |t, args|
     post.puts "layout: post"
     post.puts "title: \"#{title.gsub(/&/,'&amp;')}\""
     post.puts "modified: #{Time.now.strftime('%Y-%m-%d %H:%M:%S %z')}"
+	post.puts "category: "
     post.puts "tags: [#{tags}]"
     post.puts "image:"
     post.puts "  feature: "
@@ -41,6 +42,10 @@ task :new_post, :title do |t, args|
     post.puts "comments: true"
     post.puts "share: true"
     post.puts "---"
+	post.puts ""
+	post.puts "### 前言"
+	post.puts ""
+	post.puts "<!--more-->"
   end
 end
 
