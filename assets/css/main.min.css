@@ -57,3 +57,26 @@ font-family:'Lato',Calibri,Arial,Microsoft YaHei;font-size:1.1em;text-transform:
 display: inline-block;
 width: 2em;
 }
+
+#main .article .categories {
+    width: 100%;
+    overflow: hidden;
+    margin: 20px 0;
+    padding-left: 0;
+}
+#main .categories .categories-item {
+    list-style-type: none;
+    background: #99b9c4;
+    color: #fff;
+    margin: 5px 10px;
+    padding: 3px 20px;
+    float: left;
+}
+#main .categories .categories-item a {
+    color: #fff;
+}
+#main .categories .categories-item a span{
+    color: #fff;
+	font-size: .625rem;
+	vertical-align: super;
+}
