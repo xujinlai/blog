@@ -18,11 +18,11 @@ share: true
   在这里将对于新主题的一些改进进行一个细致的说明,同时也提供一些使用jekyll的心得在这里.\\
   主要分为以下几点:
 
-  1. [使用新主题`hsptr`]("#hsptr")
-  2. [将`markdown`解析器换为`kramdown`]("#kramdown")
-  3. [使用`google code prettify`进行代码高亮处理,解决github pages无法使用`coderay`的问题]("#GCP")
-  4. [为`hsptr`主题增加右侧悬浮`TOC`(悬停显示)]("#TOC")
-  5. [为`hsptr`主题增加`categories`页面]("#categories")
+  1. [使用新主题`hsptr`](#hsptr)
+  2. [将`markdown`解析器换为`kramdown`](#kramdown)
+  3. [使用`google code prettify`进行代码高亮处理,解决github pages无法使用`coderay`的问题](#GCP)
+  4. [为`hsptr`主题增加右侧悬浮`TOC`(悬停显示)](#TOC)
+  5. [为`hsptr`主题增加`categories`页面](#categories)
 
 <!--more-->
 
