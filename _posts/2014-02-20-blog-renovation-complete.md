@@ -71,6 +71,7 @@ share: true
 {:toc}
 ~~~
   但是这样生成的文章目录不是很好用,也不美观,文章太长的话,想要找东西很麻烦,然后就本着造福人类的想法,我投身到了完全没有接触过的`JS`和`CSS`的世界中去了,由于改动的位置实在太多,这里就不冗述了,详情参见我博客的github项目.
+
   这里**mark**一下jquery的获取元素位置的方式:
 
 ~~~ js
@@ -79,6 +80,7 @@ $('header').outerHeight() //获取元素外部高度(包括margin)
 ~~~
 
   下面是主要修改的两个文件:
+
   + [CSS](https://github.com/xujinlai/xujinlai.github.io/blob/master/assets/css/main.min.css)
   + [TOC-ASIDE JS](https://github.com/xujinlai/xujinlai.github.io/blob/master/assets/js/plugins/toc-aside.js)
 
