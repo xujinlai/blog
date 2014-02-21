@@ -84,6 +84,17 @@ $(function() {
 	
 });
 
+$(window).load(function(){
+	menuPosition=224;
+	menuPosition_t=$('header').outerHeight()+50;
+	if(menuPosition_t){
+		menuPosition=menuPosition_t;
+	}else {
+		menuPosition=224;
+	}
+	FloatMenu();
+});
+
 function FloatMenu(){
 	var toplest=25
 	var animationSpeed=1500;
