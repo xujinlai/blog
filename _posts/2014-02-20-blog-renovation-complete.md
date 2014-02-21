@@ -18,15 +18,15 @@ share: true
   在这里将对于新主题的一些改进进行一个细致的说明,同时也提供一些使用jekyll的心得在这里.
   主要分为以下几点:
 
-  1. 使用新主题`hsptr`
-  2. 将`markdown`解析器换为`kramdown`
-  3. 使用`google code prettify`进行代码高亮处理,解决github pages无法使用`coderay`的问题
-  4. 为`hsptr`主题增加右侧悬浮`TOC`(悬停显示)
-  5. 为`hsptr`主题增加`categories`页面
+  [1^]: 使用新主题`hsptr`
+  [2^]: 将`markdown`解析器换为`kramdown`
+  [3^]: 使用`google code prettify`进行代码高亮处理,解决github pages无法使用`coderay`的问题
+  [4^]: 为`hsptr`主题增加右侧悬浮`TOC`(悬停显示)
+  [5^]: 为`hsptr`主题增加`categories`页面
 
 <!--more-->
 
-### 新主题hsptr
+### 新主题hsptr[1^]
   之前一直使用的[Jekyll 博客主题 Kunka](http://www.zhanxin.info/jekyll/2013-08-11-jekyll-theme-kunka.html)这个主题,也对其进行了一定的修改,但是最近发现其在手机上的表现实在不尽如人意,所以决定换成响应式布局的主题.
 
   然后首先尝试的是[hexo](http://zespia.tw/hexo/),但是hexo有几个很致命的问题:
@@ -43,11 +43,11 @@ share: true
   + `inlinecode`的样式为有立体感觉.
   + `code hightlight`的字体改为`Consolas`.
 
-### kramdown
+### kramdown[^2]
   用过了之后才发现,都是`markdown`解析器,差别其实相当大,`kramdown`支持的语法非常多,比如我现在最想要的引用,其原生就支持,除了生成速度较慢,使用起来是相当方便的.
-  我也是看了一篇[^1]`markdown`解析器的对比之后才转过来使用`kramdown`的.kramdown在任何方面都有其优势,只是由于其原生使用的`coderay`无法在`Github Pages`上使用(Github Pages不支持插件),所以需要进行一定的修改,让其更加好用.
+  我也是看了一篇[^6]`markdown`解析器的对比之后才转过来使用`kramdown`的.kramdown在任何方面都有其优势,只是由于其原生使用的`coderay`无法在`Github Pages`上使用(Github Pages不支持插件),所以需要进行一定的修改,让其更加好用.
 
-### GCP
+### GCP[^3]
   尝试了一些方法在`Github Pages`上不通过插件的方式实现代码高亮,最后发现[GCP(Google Code Prettify)](http://google-code-prettify.googlecode.com/svn/trunk/README.html)是其中最好用的.
   首先在`Google Code Prettify`的网站上下载它的js和css的包放入博客目录中.
   然后在页面上加入如下一段代码就行了:
@@ -63,7 +63,7 @@ share: true
 </script>
 ~~~
 
-### 悬浮TOC
+### 悬浮TOC[4^]
   另外一个问题就是文章目录的问题,首先在kramdown里面可以很简单的插入文章目录,使用如下代码:
 
 ~~~
@@ -84,7 +84,7 @@ $('header').outerHeight() //获取元素外部高度(包括margin)
   + [CSS](https://github.com/xujinlai/xujinlai.github.io/blob/master/assets/css/main.min.css)
   + [TOC-ASIDE JS](https://github.com/xujinlai/xujinlai.github.io/blob/master/assets/js/plugins/toc-aside.js)
 
-### Categories
+### Categories[5^]
   这个是借的`kunka`主题的,然后对应我的`hsptr`主题进行了一定修改,参见:
 
   + [categories.html](https://github.com/xujinlai/xujinlai.github.io/blob/master/categories.html)
@@ -93,4 +93,4 @@ $('header').outerHeight() //获取元素外部高度(包括margin)
 
 ### 参考
 
-[^1]: [Using Kramdown instead of Maruku](http://bloerg.net/2013/03/07/using-kramdown-instead-of-maruku.html)
+[^6]: [Using Kramdown instead of Maruku](http://bloerg.net/2013/03/07/using-kramdown-instead-of-maruku.html)
