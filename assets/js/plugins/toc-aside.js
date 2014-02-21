@@ -86,6 +86,7 @@ $(function() {
 
 function FloatMenu(){
 	var toplest=25
+	menuPosition=224;
 	var animationSpeed=1500;
 	var animationEasing='easeOutQuint';
 	var scrollAmount=$(document).scrollTop();
