@@ -20,8 +20,8 @@ share: true
 
   1. [使用新主题`hsptr`](#hsptr)
   2. [将`markdown`解析器换为`kramdown`](#kramdown)
-  3. [使用`google code prettify`进行代码高亮处理,解决github pages无法使用`coderay`的问题](#GCP)
-  4. [为`hsptr`主题增加右侧悬浮`TOC`(悬停显示)](#TOC)
+  3. [使用`google code prettify`进行代码高亮处理,解决github pages无法使用`coderay`的问题](#gcp)
+  4. [为`hsptr`主题增加右侧悬浮`TOC`(悬停显示)](#toc)
   5. [为`hsptr`主题增加`categories`页面](#categories)
 
 <!--more-->
