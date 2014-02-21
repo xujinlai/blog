@@ -38,6 +38,11 @@ share: true
   并且发现jekyll还是有许多好的主题可以使用的,比如我现在使用的[hsptr主题](https://github.com/mmistakes/hpstr-jekyll-theme),还有许多其他的主题可以使用,参见:[Jekyll Themes](http://jekyllthemes.org/).
   ![](https://github-camo.global.ssl.fastly.net/3d61a3577179496689d9b4931711089a6a9d7a07/687474703a2f2f6d6d697374616b65732e6769746875622e696f2f68707374722d6a656b796c6c2d7468656d652f696d616765732f68707374722d6a656b796c6c2d7468656d652d707265766965772e6a7067)
 
+  在`hsptr`的基础上,我还修改了一些样式,比如:
+
+  + `inlinecode`的样式为有立体感觉.
+  + `code hightlight`的字体改为`Consolas`.
+
 ### kramdown
   用过了之后才发现,都是`markdown`解析器,差别其实相当大,`kramdown`支持的语法非常多,比如我现在最想要的引用,其原生就支持,除了生成速度较慢,使用起来是相当方便的.
   我也是看了一篇[^1]`markdown`解析器的对比之后才转过来使用`kramdown`的.kramdown在任何方面都有其优势,只是由于其原生使用的`coderay`无法在`Github Pages`上使用(Github Pages不支持插件),所以需要进行一定的修改,让其更加好用.
@@ -66,8 +71,14 @@ share: true
 {:toc}
 ~~~
   但是这样生成的文章目录不是很好用,也不美观,文章太长的话,想要找东西很麻烦,然后就本着造福人类的想法,我投身到了完全没有接触过的`JS`和`CSS`的世界中去了,由于改动的位置实在太多,这里就不冗述了,详情参见我博客的github项目.
-  下面是主要修改的两个文件:
+  这里**mark**一下jquery的获取元素位置的方式:
 
+~~~ js
+$('#h2outline').height() //获取元素高度
+$('header').outerHeight() //获取元素外部高度(包括margin)
+~~~
+
+  下面是主要修改的两个文件:
   + [CSS](https://github.com/xujinlai/xujinlai.github.io/blob/master/assets/css/main.min.css)
   + [TOC-ASIDE JS](https://github.com/xujinlai/xujinlai.github.io/blob/master/assets/js/plugins/toc-aside.js)
 
