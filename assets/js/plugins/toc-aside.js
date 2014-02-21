@@ -19,6 +19,49 @@ jQuery.extend( jQuery.easing,
 	}
  });
  
+
+
+function FloatMenu(){
+	var toplest=25
+	var animationSpeed=1500;
+	var animationEasing='easeOutQuint';
+	var scrollAmount=$(document).scrollTop();
+	var newPosition=toplest+scrollAmount;
+	if($(window).height()<$('#h2outline').height()+$('#h2outline .menu').height()){
+		$('#h2outline').stop().animate({top: newPosition}, animationSpeed, animationEasing);
+	} else {
+		if($(document).scrollTop()<menuPosition){
+			$('#h2outline').stop().animate({top: menuPosition}, animationSpeed, animationEasing);
+		} else{
+			$('#h2outline').stop().animate({top: newPosition}, animationSpeed, animationEasing);
+		}
+
+	}
+}
+$(window).load(function(){
+	menuPosition=224;
+	menuPosition_t=$('header').outerHeight()+50;
+	if(menuPosition_t){
+		menuPosition=menuPosition_t;
+	}else {
+		menuPosition=224;
+	}
+	FloatMenu();
+});
+$(window).scroll(function(){ 
+	FloatMenu();
+});
+$(document).ready(function(){
+	var fadeSpeed=500;
+	$("#h2outline").hover(function(){
+		$('#h2outline .lable').fadeTo(fadeSpeed, 1);
+		$("#h2outline .menu").fadeIn(fadeSpeed);
+	},function(){
+		$('#h2outline .lable').fadeTo(fadeSpeed, 0.75);
+		$("#h2outline .menu").fadeOut(fadeSpeed);
+	});
+});
+
 $(function() {
     var dict = {};
     $('h3').each(function (idx) {
@@ -40,7 +83,7 @@ $(function() {
     $('#main').append($('<nav id="h2outline"></nav>')
                          .css('position', 'absolute')
                          .css('width', '155px')
-						 .css('top', 224)
+						 .css('top', $('header').outerHeight()+50)
                          .css('text-align', 'left')
                          .html(outline_ul));
 
@@ -82,35 +125,4 @@ $(function() {
 
     $(window).resize();
 	
-
-
-});
-
-function FloatMenu(){
-	var animationSpeed=1500;
-	var animationEasing='easeOutQuint';
-	var scrollAmount=$(document).scrollTop();
-	var newPosition=menuPosition+scrollAmount;
-	if($(window).height()<$('#h2outline').height()+$('#h2outline .menu').height()){
-		$('#h2outline').css('top',menuPosition);
-	} else {
-		$('#h2outline').stop().animate({top: newPosition}, animationSpeed, animationEasing);
-	}
-}
-$(window).load(function(){
-	menuPosition=$('#h2outline').position().top;
-	FloatMenu();
-});
-$(window).scroll(function(){ 
-	FloatMenu();
-});
-$(document).ready(function(){
-	var fadeSpeed=500;
-	$("#h2outline").hover(function(){
-		$('#h2outline .lable').fadeTo(fadeSpeed, 1);
-		$("#h2outline .menu").fadeIn(fadeSpeed);
-	},function(){
-		$('#h2outline .lable').fadeTo(fadeSpeed, 0.75);
-		$("#h2outline .menu").fadeOut(fadeSpeed);
-	});
 });
