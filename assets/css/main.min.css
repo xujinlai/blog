@@ -65,24 +65,23 @@ width: 2em;
     padding-left: 0;
 }
 #main .categories .categories-item {
-    list-style-type: none;
-    color: #fff;
-	background-color: #5bc0de;
-	border-color: #46b8da;
-	margin: 0 .1em;
-	line-height: 1;
-	float: left;
+	display: inline-block;
+	padding: 8px 20px;
+	margin-bottom: 20px;
+	font-size: 14px;
+	font-size: .875rem;
+	color: #fff;
+	background-color: #308cbc;
+	border-color: #308cbc;
+	border-style: solid!important;
+	border-width: 2px!important;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
 }
-#main .categories .categories-item a {
-    color: #fff;
-	text-align: center;
-	font-weight: bold;
-}
-#main .categories .categories-item:hover {
+#main .categories .categories-item:hover,#main .categories .categories-item a span:hover {
     color: #308cbc;
 	background-color: #fff;
-	text-align: center;
-	font-weight: bold;
 }
 
 #main .categories .categories-item a span{
