@@ -79,8 +79,8 @@ width: 2em;
 	border-radius: 3px;
 }
 #main .categories .categories-item:hover {
-    color: #fff;
-	background-color: #5bc0de;
+    color: #5bc0de;
+	background-color: #fff;
 }
 
 #main .categories .categories-item a span{
