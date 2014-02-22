@@ -79,9 +79,18 @@ width: 2em;
 	border-radius: 3px;
 }
 #main .categories .categories-item:hover {
+    color: #fff;
+	background-color: #5bc0de;
+}
+
+#main .categories .categories-item a:visited {
     color: #5bc0de;
 	background-color: #fff;
-	border-color: #269abc;
+}
+
+#main .categories .categories-item a:hover {
+    color: #5bc0de;
+	background-color: #fff;
 }
 
 #main .categories .categories-item a span{
