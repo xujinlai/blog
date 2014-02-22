@@ -83,16 +83,6 @@ width: 2em;
 	background-color: #5bc0de;
 }
 
-#main .categories .categories-item a:visited {
-    color: #5bc0de;
-	background-color: #fff;
-}
-
-#main .categories .categories-item a:hover {
-    color: #5bc0de;
-	background-color: #fff;
-}
-
 #main .categories .categories-item a span{
 	font-size: .625rem;
 	vertical-align: super;
