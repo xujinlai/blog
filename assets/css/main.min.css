@@ -64,8 +64,7 @@ width: 2em;
     margin: 20px 0;
     padding-left: 0;
 }
-#main .categories .categories-item a{
-	display: inline;
+#main .categories .categories-item{
 	list-style-type: none;
 	padding: 8px 20px;
 	margin-bottom: 20px;
@@ -80,7 +79,7 @@ width: 2em;
 	-moz-border-radius: 3px;
 	border-radius: 3px;
 }
-#main .categories .categories-item a:hover {
+#main .categories .categories-item:hover {
     color: #222;
 	background-color: #fff;
 }
