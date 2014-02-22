@@ -65,22 +65,18 @@ width: 2em;
     padding-left: 0;
 }
 #main .categories .categories-item{
-	list-style-type: none;
-	padding: 8px 20px;
-	margin-bottom: 20px;
-	font-size: 14px;
-	font-size: .875rem;
-	color: #fff;
-	background-color: #222;
-	border-color: #222;
-	border-width: 2px!important;
-	-webkit-border-radius: 3px;
-	-moz-border-radius: 3px;
-	border-radius: 3px;
+    list-style-type: none;
+    background-color: #5bc0de;
+	border-color: #46b8da;
+    color: #fff;
+    margin: 10px 10px;
+    padding: 3px 20px;
+    float: left;
 }
 #main .categories .categories-item:hover {
-    color: #222;
+    color: #5bc0de;
 	background-color: #fff;
+	border-color: #269abc;
 }
 
 #main .categories .categories-item a span{
