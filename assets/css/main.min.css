@@ -69,8 +69,8 @@ width: 2em;
     color: #fff;
 	background-color: #5bc0de;
 	border-color: #46b8da;
-    padding: .4em .4em .4em;
 	margin: 0 .1em;
+	line-height: 1;
 	float: left;
 }
 #main .categories .categories-item a {
@@ -84,8 +84,7 @@ width: 2em;
 	text-align: center;
 	font-weight: bold;
 }
-color: #308cbc;
-background-color: #fff;
+
 #main .categories .categories-item a span{
     color: #fff;
 	font-size: .625rem;
