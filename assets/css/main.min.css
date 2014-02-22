@@ -66,15 +66,26 @@ width: 2em;
 }
 #main .categories .categories-item {
     list-style-type: none;
-    background: #99b9c4;
     color: #fff;
-    margin: 5px 10px;
-    padding: 3px 20px;
-    float: left;
+	background-color: #5bc0de;
+	border-color: #46b8da;
+    padding: .4em .4em .4em;
+	margin: 0 .1em;
+	float: left;
 }
 #main .categories .categories-item a {
     color: #fff;
+	text-align: center;
+	font-weight: bold;
 }
+#main .categories .categories-item a:hover {
+    color: #308cbc;
+	background-color: #fff;
+	text-align: center;
+	font-weight: bold;
+}
+color: #308cbc;
+background-color: #fff;
 #main .categories .categories-item a span{
     color: #fff;
 	font-size: .625rem;
