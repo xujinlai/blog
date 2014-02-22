@@ -71,21 +71,20 @@ width: 2em;
 	font-size: 14px;
 	font-size: .875rem;
 	color: #fff;
-	background-color: #308cbc;
-	border-color: #308cbc;
+	background-color: #222;
+	border-color: #222;
 	border-style: solid!important;
 	border-width: 2px!important;
 	-webkit-border-radius: 3px;
 	-moz-border-radius: 3px;
 	border-radius: 3px;
 }
-#main .categories .categories-item:hover,#main .categories .categories-item a span:hover {
-    color: #308cbc;
+#main .categories .categories-item:hover {
+    color: #222;
 	background-color: #fff;
 }
 
 #main .categories .categories-item a span{
-    color: #fff;
 	font-size: .625rem;
 	vertical-align: super;
 }
