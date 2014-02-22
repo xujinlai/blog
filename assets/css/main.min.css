@@ -78,7 +78,7 @@ width: 2em;
 	text-align: center;
 	font-weight: bold;
 }
-#main .categories .categories-item a:hover {
+#main .categories .categories-item:hover {
     color: #308cbc;
 	background-color: #fff;
 	text-align: center;
