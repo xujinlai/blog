@@ -65,6 +65,8 @@ width: 2em;
     padding-left: 0;
 }
 #main .categories .categories-item a{
+	display: inline;
+	list-style-type: none;
 	padding: 8px 20px;
 	margin-bottom: 20px;
 	font-size: 14px;
