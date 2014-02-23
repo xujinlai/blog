@@ -14,9 +14,11 @@
 {% include navigation.html %}
 
 
-{% if page.image.feature %}
+{% if page.image.feature or site.feature %}
+{% capture feature %}{% if page.image.feature %}{{ page.image.feature }}{% else %}{{ site.feature }}{% endif %}{% endcapture %}
+{% unless feature contains 'http://' or feature contains 'https://' %}{% capture feature %}{{ site.url }}/images/{{ feature }}{% endcapture %}{% endunless %}
 <div class="entry-header">
-  <div class="entry-image"><img src="{{ site.url }}/images/{{ page.image.feature }}" alt="{{ page.title }}">
+  <div class="entry-image"><img src="{{ feature }}" alt="{{ page.title }}">
     {% if page.image.credit %}<div class="image-credit">Image source: <a href="{{ page.image.creditlink }}">{{ page.image.credit }}</a></div><!-- /.image-credit -->{% endif %}
   </div><!-- /.entry-image -->
 </div><!-- /.entry-header -->

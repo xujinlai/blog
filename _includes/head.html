@@ -3,14 +3,19 @@
 <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
 {% if page.tags %}<meta name="keywords" content="{{ page.tags | join: ', ' }}">{% endif %}
 
+
 {% if site.owner.twitter %}<!-- Twitter Cards -->
-{% if page.image.feature %}<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="{{ site.url }}/images/{{ page.image.feature }}">
+{% if page.image.feature or site.feature %}
+{% capture feature %}{% if page.image.feature %}{{ page.image.feature }}{% else %}{{ site.feature }}{% endif %}{% endcapture %}
+{% unless feature contains 'http://' or feature contains 'https://' %}{% capture feature %}{{ site.url }}/images/{{ feature }}{% endcapture %}{% endunless %}
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="{{ feature }}">
 {% else %}<meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="{% if page.image.thumb %}{{ site.url }}/images/{{ page.image.thumb }}{% else %}{{ site.url }}/images/{{ site.logo }}{% endif %}">{% endif %}
 <meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
 <meta name="twitter:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
-<meta name="twitter:creator" content="@{{ site.owner.twitter }}">{% endif %}
+<meta name="twitter:creator" content="@{{ site.owner.twitter }}">
+{% endif %}
 
 <!-- Open Graph -->
 <meta property="og:locale" content="en_US">
