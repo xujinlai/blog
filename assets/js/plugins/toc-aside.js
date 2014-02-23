@@ -40,7 +40,7 @@ $(function() {
     $('#main').append($('<nav id="h2outline"></nav>')
                          .css('position', 'absolute')
                          .css('width', '155px')
-						 .css('top', $('#hentry').offset().top)
+						 .css('top', $('article').offset().top)
                          .css('text-align', 'left')
                          .html(outline_ul));
 
@@ -86,7 +86,7 @@ $(function() {
 
 $(window).load(function(){
 	menuPosition=224;
-	menuPosition_t=$('#hentry').offset().top;
+	menuPosition_t=$('article').offset().top;
 	if(menuPosition_t){
 		menuPosition=menuPosition_t;
 	}else {
