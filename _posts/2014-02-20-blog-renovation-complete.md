@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Blog Renovation Complete"
+description: "Blog装修完毕,在这里mark一下"
 modified: 2014-02-20 19:39:16 +0800
 category: "Blog"
 tags: [Jekyll,Blog,Theme,coderay,github pages,hsptr]

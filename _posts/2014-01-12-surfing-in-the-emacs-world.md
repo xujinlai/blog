@@ -19,9 +19,11 @@ tags: [emacs, tutorial, beginner, blog, github, prelude, eshell]
 <!--more-->
 
 ### 正文
+
 #### 学习emacs的理念
+
 在下定决心学习emacs的这几天里,我看到的最好的一篇文章就是
-"[一年成为Emacs高手(像神一样使用编辑器)](http://blog.csdn.net/redguardtoo/article/details/7222501)".
+"[一年成为Emacs高手(像神一样使用编辑器)](http://blog.csdn.net/redguardtoo/article/details/7222501)".\\
 我非常欣赏这篇文章里面提到的几个观点,就是这些观点解开了我对于emacs之前的一些误解.(非常感谢作者 **陈斌(redguardtoo)**的慷慨无私的倾囊相授)
 
 下面先来说一下对于我启发尤其大的几个方面
