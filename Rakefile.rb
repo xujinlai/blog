@@ -37,7 +37,7 @@ task :new_post, :title do |t, args|
 	post.puts "category: "
     post.puts "tags: [#{tags}]"
     post.puts "image:"
-    post.puts "  feature: "
+    post.puts "  feature: http://seeksky.qiniudn.com/19.jpg-clip.jpg"
     post.puts "  credit: "
     post.puts "  creditlink: "
     post.puts "comments: true"
