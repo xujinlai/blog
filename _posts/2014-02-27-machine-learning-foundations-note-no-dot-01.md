@@ -27,9 +27,11 @@ share: true
  + **How** Can Machines Learn? (technical + practical)
  + How Can Machines Learn **Better**? (practical + theoretical)
 
-这个课程将围绕解释这几个问题展开
+这个课程将围绕解释上面这几个问题展开
 
-<iframe src="https://docs.google.com/file/d/0B9qw8YyWZEzKbVZpRzBveEZicDg/preview" width="1280" height="800"></iframe>
+[Google Doc上第一课的PPT](https://drive.google.com/file/d/0B9qw8YyWZEzKbVZpRzBveEZicDg/edit?usp=sharing)
+
+<iframe src="https://docs.google.com/file/d/0B9qw8YyWZEzKbVZpRzBveEZicDg/preview" width="640" height="480"></iframe>
 
 第一课主要解释了机器学习这个课程将要介绍的内容以及对机器学习进行了简单的建模.\\
 这里主要是下面这一个图:\\
@@ -41,13 +43,13 @@ share: true
  + output: $$y \in Y$$ (good/bad after approving credit card)
  + **unknown pattern to be learned = target function**:\\
    * $$f : X \to Y$$ (ideal credit approval formula)
- + **data = training examples**: $$D = {f(x_1; y_1); (x_2; y_2); \cdots ; (x_N; y_N)}$$ (historical records in bank)
+ + **data = training examples**: $$D = \{f(x_1, y_1); (x_2, y_2); \cdots ; (x_N, y_N)\}$$ (historical records in bank)
  + **hypothesis = skill** with hopefully **good performance**:
    * $$g : X \to Y$$ (‘learned’ formula to be used)
 
  + target f unknown
  + hypothesis g hopefully $$\approx$$ f, but possibly **different** from f, (perfection ‘impossible’ when f unknown)
- + assume $$g \to H = {h_k}$$
+ + assume $$g \in H = \{h_k\}$$
  + hypothesis set H:
    * can contain **good or bad hypotheses**
    * up to A to pick the ‘best’ one as g
