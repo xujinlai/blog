@@ -29,11 +29,11 @@ share: true
 
 这个课程将围绕解释这几个问题展开
 
-<iframe src="https://docs.google.com/file/d/0B9qw8YyWZEzKbVZpRzBveEZicDg/preview" width="640" height="480"></iframe>
+<iframe src="https://docs.google.com/file/d/0B9qw8YyWZEzKbVZpRzBveEZicDg/preview" width="1280" height="800"></iframe>
 
 第一课主要解释了机器学习这个课程将要介绍的内容以及对机器学习进行了简单的建模.\\
 这里主要是下面这一个图:\\
-![]( {{ site.qiniu }}\MLF\defML.png)
+![]( {{ site.qiniu }}\MLF\DefML.png)
 
 这个图主要阐述了下面几个内容:
 
