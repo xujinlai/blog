@@ -43,7 +43,7 @@ share: true
  + output: $$y \in Y$$ (good/bad after approving credit card)
  + **unknown pattern to be learned = target function**:\\
    * $$f : X \to Y$$ (ideal credit approval formula)
- + **data = training examples**: $$D = \{f(x_1, y_1); (x_2, y_2); \cdots ; (x_N, y_N)\}$$ (historical records in bank)
+ + **data = training examples**: $$D = \{f(x_1, y_1), (x_2, y_2), \cdots , (x_N, y_N)\}$$ (historical records in bank)
  + **hypothesis = skill** with hopefully **good performance**:
    * $$g : X \to Y$$ (‘learned’ formula to be used)
 
