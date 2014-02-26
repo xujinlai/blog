@@ -44,7 +44,7 @@ task :new_post, :title do |t, args|
     post.puts "share: true"
     post.puts "---"
 	post.puts ""
-	post.puts "### 前言"
+	post.puts "### "
 	post.puts ""
 	post.puts "<!--more-->"
   end
