@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Machine Learning Foundations note No.01"
-description: "Ñ§Ï°courseraÉÏÃæ»úÆ÷Ñ§Ï°»ùÊ¯¿Î³ÌµÄ±Ê¼Ç"
+description: "å­¦ä¹ courseraä¸Šé¢æœºå™¨å­¦ä¹ åŸºçŸ³è¯¾ç¨‹çš„ç¬”è®°"
 modified: 2014-02-27 06:14:13 +0800
 category:
 tags: [ML, note]
@@ -13,29 +13,29 @@ comments: true
 share: true
 ---
 
-### Ç°ÑÔ
-Õâ¶ÎÊ±¼ä¿´ÁËcourseraÉÏÃæ`»úÆ÷Ñ§Ï°»ùÊ¯`ÕâÃÅ¿Î³ÌµÄÏà¹ØÄÚÈİ,ÔÚÕâÀïÁôÏÂÒ»Ğ©¼ÇÂ¼
+### å‰è¨€
+è¿™æ®µæ—¶é—´çœ‹äº†courseraä¸Šé¢`æœºå™¨å­¦ä¹ åŸºçŸ³`è¿™é—¨è¯¾ç¨‹çš„ç›¸å…³å†…å®¹,åœ¨è¿™é‡Œç•™ä¸‹ä¸€äº›è®°å½•
 
 <!--more-->
 
-### µÚÒ»¿Î: The Learning Problem
+### ç¬¬ä¸€è¯¾: The Learning Problem
 
-»úÆ÷Ñ§Ï°ÊÇÒ»¸ö·Ç³£Ç¿´óµÄ¹¤¾ß,µ«ÊÇÆä»ù´¡ÔÚÄÄÀï,ÎÒÃÇ»¹ÒªÔÙÎÊ¼¸¸öÎÊÌâ:
+æœºå™¨å­¦ä¹ æ˜¯ä¸€ä¸ªéå¸¸å¼ºå¤§çš„å·¥å…·,ä½†æ˜¯å…¶åŸºç¡€åœ¨å“ªé‡Œ,æˆ‘ä»¬è¿˜è¦å†é—®å‡ ä¸ªé—®é¢˜:
 
  + **When** Can Machines Learn? (illustrative + technical)
  + **Why** Can Machines Learn? (theoretical + illustrative)
  + **How** Can Machines Learn? (technical + practical)
  + How Can Machines Learn **Better**? (practical + theoretical)
 
-Õâ¸ö¿Î³Ì½«Î§ÈÆ½âÊÍÕâ¼¸¸öÎÊÌâÕ¹¿ª
+è¿™ä¸ªè¯¾ç¨‹å°†å›´ç»•è§£é‡Šè¿™å‡ ä¸ªé—®é¢˜å±•å¼€
 
 <iframe src="https://docs.google.com/file/d/0B9qw8YyWZEzKbVZpRzBveEZicDg/preview" width="640" height="480"></iframe>
 
-µÚÒ»¿ÎÖ÷Òª½âÊÍÁË»úÆ÷Ñ§Ï°Õâ¸ö¿Î³Ì½«Òª½éÉÜµÄÄÚÈİÒÔ¼°¶Ô»úÆ÷Ñ§Ï°½øĞĞÁË¼òµ¥µÄ½¨Ä£.\\
-ÕâÀïÖ÷ÒªÊÇÏÂÃæÕâÒ»¸öÍ¼:\\
+ç¬¬ä¸€è¯¾ä¸»è¦è§£é‡Šäº†æœºå™¨å­¦ä¹ è¿™ä¸ªè¯¾ç¨‹å°†è¦ä»‹ç»çš„å†…å®¹ä»¥åŠå¯¹æœºå™¨å­¦ä¹ è¿›è¡Œäº†ç®€å•çš„å»ºæ¨¡.\\
+è¿™é‡Œä¸»è¦æ˜¯ä¸‹é¢è¿™ä¸€ä¸ªå›¾:\\
 ![]( {{ site.qiniu }}\MLF\defML.png)
 
-Õâ¸öÍ¼Ö÷Òª²ûÊöÁËÏÂÃæ¼¸¸öÄÚÈİ:
+è¿™ä¸ªå›¾ä¸»è¦é˜è¿°äº†ä¸‹é¢å‡ ä¸ªå†…å®¹:
 
  + input: $$x \in X$$ (customer application)
  + output: $$y \in Y$$ (good/bad after approving credit card)
@@ -43,15 +43,15 @@ share: true
    * $$f : X \to Y$$ (ideal credit approval formula)
  + **data = training examples**: $$D = {f(x_1; y_1); (x_2; y_2); \cdots ; (x_N; y_N)}$$ (historical records in bank)
  + **hypothesis = skill** with hopefully **good performance**:
-   * $$g : X \to Y$$ (¡®learned¡¯ formula to be used)
+   * $$g : X \to Y$$ (â€˜learnedâ€™ formula to be used)
 
  + target f unknown
- + hypothesis g hopefully $$\approx$$ f, but possibly **different** from f, (perfection ¡®impossible¡¯ when f unknown)
+ + hypothesis g hopefully $$\approx$$ f, but possibly **different** from f, (perfection â€˜impossibleâ€™ when f unknown)
  + assume $$g \to H = {h_k}$$
  + hypothesis set H:
    * can contain **good or bad hypotheses**
-   * up to A to pick the ¡®best¡¯ one as g
+   * up to A to pick the â€˜bestâ€™ one as g
 
-Õâ¸öÍ¼×ÜµÄÀ´Ëµ¾ÍÊÇÃèÊöÁË»úÆ÷Ñ§Ï°µÄÄ£ĞÍ,´ÓÊı¾İµ½**g**º¯Êı,Ò²¾ÍÊÇ¶ÔÓÚ**f**µÄ²ÂÏë.ÖĞ¼äµÄÑ§Ï°Ä£ĞÍ¾ÍÊÇ**A**ºÍ**H**.
+è¿™ä¸ªå›¾æ€»çš„æ¥è¯´å°±æ˜¯æè¿°äº†æœºå™¨å­¦ä¹ çš„æ¨¡å‹,ä»æ•°æ®åˆ°**g**å‡½æ•°,ä¹Ÿå°±æ˜¯å¯¹äº**f**çš„çŒœæƒ³.ä¸­é—´çš„å­¦ä¹ æ¨¡å‹å°±æ˜¯**A**å’Œ**H**.
 
- + ×îºó×Ü½áÆğÀ´¾ÍÊÇ: `machine learning`: use **data** to compute **hypothesis _g_** that approximates **target _f_**
+ + æœ€åæ€»ç»“èµ·æ¥å°±æ˜¯: `machine learning`: use **data** to compute **hypothesis _g_** that approximates **target _f_**
