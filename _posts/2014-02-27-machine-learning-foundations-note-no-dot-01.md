@@ -3,7 +3,7 @@ layout: post
 title: "Machine Learning Foundations note No.01"
 description: "学习coursera上面机器学习基石课程的笔记"
 modified: 2014-02-27 06:14:13 +0800
-category:
+category: "ML"
 tags: [ML, note]
 image:
   feature: http://seeksky.qiniudn.com/19.jpg-clip.jpg
