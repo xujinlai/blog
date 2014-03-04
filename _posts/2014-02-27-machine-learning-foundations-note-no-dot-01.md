@@ -11,6 +11,7 @@ image:
   creditlink:
 comments: true
 share: true
+alias: [/2014/02/27/machine-learning-foundations-note-no-dot-01/]
 ---
 
 ### 前言
