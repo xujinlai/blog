@@ -42,6 +42,7 @@ task :new_post, :title do |t, args|
     post.puts "  creditlink: "
     post.puts "comments: true"
     post.puts "share: true"
+	post.puts "alias: [#{Time.now.strftime('/%Y/%m/%d')}/#{title.gsub(/&/,'&amp;')}]"
     post.puts "---"
 	post.puts ""
 	post.puts "### "
