@@ -24,6 +24,7 @@ alias: [/2014/04/19/Using D Star navigation in ROS]
 ### 简介
 本文主要解决如何在ROS上面使用[**Humanoid Robots Lab at the Albert-Ludwigs-University in Freiburg, Germany**](http://hrl.informatik.uni-freiburg.de/)实验室编写的人形机器人路径规划模块\\
 主要分为以下几个步骤进行:\\
+
  1. 安装最新版本的`ROS`. (以Ubuntu12.04为例)
  2. 安装`humanoid_navigation`库,并进行编译.
  3. 如何使用`humanoid_navigation`库进行人形机器人的路径规划
@@ -35,14 +36,19 @@ alias: [/2014/04/19/Using D Star navigation in ROS]
 步骤如下:\\
 
  1. 设置apt库的源列表:\\
+
  ~~~ sh
  sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu precise main" > /etc/apt/sources.list.d/ros-latest.list'
  ~~~
+
  2. 设置密钥:\\
+
  ~~~ sh
  wget http://packages.ros.org/ros.key -O - | sudo apt-key add -
  ~~~
+
  3. 下载并安装ROS,并进行环境设置:\\
+
  ~~~ sh
  sudo apt-get update
  sudo apt-get install ros-hydro-desktop-full
@@ -63,24 +69,31 @@ sudo apt-get install libboost1.46-all-dev
 之后进行humanoid_navigation包的安装,其步骤如下,编译时候会缺少一些ros自带的库:\\
 
  1. 配置`catkin`[^5]工作目录:
+
 ~~~ sh
  mkdir -p ~/catkin_ws/src
  cd ~/catkin_ws/src
  catkin_init_workspace
 ~~~
+
  2. 使用`wstool`[^6]配置代码仓库,将`humanoid_navigation`包加入:\\
+
 ~~~ sh
  wstool init
  wstool set humanoid_msgs --git https://github.com/ahornung/humanoid_msgs
  wstool set humanoid_navigation --git https://github.com/ahornung/humanoid_navigation -v hydro-devel
  wstool update
 ~~~
+
  3. 安装`humanoid_navigation`依赖的相关库:\\
+
 ~~~ sh
  sudo apt-get install ros-hydro-humanoid-*
  sudo apt-get install ros-hydro-octomap-*
 ~~~
+
  4. 编译工作目录:\\
+
 ~~~ sh
  source ~/catkin_ws/devel/setup.bash
  cd ~/catkin_ws
@@ -91,15 +104,19 @@ sudo apt-get install libboost1.46-all-dev
 使用步骤参考[^7][^8].
 编译好之后就可以使用`humanoid_navigation`下面的`footstep_planner`进行路径规划了.\\
 其提供了3种规划算法和3种启发式,分别由`/footstep_planner/planner_type`和`/footstep_planner/heuristic_type`这两个参数控制,如下:\\
+
  1. **"ARAPlanner"**: A* (ARA*)
  2. **ADPlanner**: Anytime Dynamic A* (AD*)
  3. **RSTARPlanner**: Randomized A* (R*)
+
 启发式:\\
+
  1. **"EuclideanHeuristic"**: Straight-line distance to the goal
  2. **"EuclStepCostHeuristic"**: Straight-line distance to the goal with added footstep costs
  3. **"PathCostHeuristic"**: Distance along 2D path pre-planned with A* (preferred). This heuristic works best in most cases, as it is most informed of the environment. Note that it is potentially inadmissible in the case of stepping over obstacles.
 
 使用这个包进行一些模拟演示:\\
+
 ~~~ sh
 roslaunch footstep_planner footstep_planner_complete.launch
 ~~~
@@ -112,6 +129,7 @@ roslaunch footstep_planner footstep_planner_complete.launch
 
 
 控制参数改变路径规划算法[^8]:\\
+
 ~~~ sh
 rosparam set /footstep_planner/planner_type ADPlanner
 ~~~
