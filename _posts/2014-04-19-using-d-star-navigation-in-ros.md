@@ -35,19 +35,19 @@ alias: [/2014/04/19/Using D Star navigation in ROS]
 现在的最新版本的`ROS`代号为`Hydro`
 步骤如下:
 
- 1. 设置apt库的源列表:
+ + 设置apt库的源列表:
 
 ~~~ sh
  sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu precise main" > /etc/apt/sources.list.d/ros-latest.list'
 ~~~
 
- 2. 设置密钥:
+ + 设置密钥:
 
 ~~~ sh
  wget http://packages.ros.org/ros.key -O - | sudo apt-key add -
 ~~~
 
- 3. 下载并安装ROS,并进行环境设置:
+ + 下载并安装ROS,并进行环境设置:
 
 ~~~ sh
  sudo apt-get update
@@ -70,7 +70,7 @@ sudo apt-get install libboost1.46-all-dev
 
 之后进行humanoid_navigation包的安装,其步骤如下,编译时候会缺少一些ros自带的库:
 
- 1. 配置`catkin`[^5]工作目录:
+ * 配置`catkin`[^5]工作目录:
 
 ~~~ sh
  mkdir -p ~/catkin_ws/src
@@ -78,7 +78,7 @@ sudo apt-get install libboost1.46-all-dev
  catkin_init_workspace
 ~~~
 
- 2. 使用`wstool`[^6]配置代码仓库,将`humanoid_navigation`包加入:
+ * 使用`wstool`[^6]配置代码仓库,将`humanoid_navigation`包加入:
 
 ~~~ sh
  wstool init
@@ -87,14 +87,14 @@ sudo apt-get install libboost1.46-all-dev
  wstool update
 ~~~
 
- 3. 安装`humanoid_navigation`依赖的相关库:
+ * 安装`humanoid_navigation`依赖的相关库:
 
 ~~~ sh
  sudo apt-get install ros-hydro-humanoid-*
  sudo apt-get install ros-hydro-octomap-*
 ~~~
 
- 4. 编译工作目录:
+ * 编译工作目录:
 
 ~~~ sh
  source ~/catkin_ws/devel/setup.bash
