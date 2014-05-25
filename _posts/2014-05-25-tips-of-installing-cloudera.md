@@ -28,6 +28,7 @@ There are several problems dealing with SSH in Ubuntu Desktop Edition.\\
  3. For the Ubuntu Desktop Edition, the password of root is not initially set. So if you want to use the `Cloudera` auto installation tools, you have to set the root password.\\
 
 This is the command for the upper steps:
+
 ~~~
 sudo apt-get install ssh
 scp  masterIP:/home/user/.ssh/id_rsa.pub ~/.ssh/authorized_keys
