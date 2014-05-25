@@ -40,5 +40,5 @@ Host IP is not really interesting for me for the sake of the complexity to set i
 Because we have not used the DNS resolving service in our cluster, we have to set the `hosts` file manually.\\
 And then use the `scp` tools to copy the file to the slaves.
 
-However, there is a easy solution to solve the problem, WINS. WINS is a service for Windows OS to resolve the IP by the hostnames of the VMs.\\
+However, there is an easy solution to solve the problem, WINS. WINS is a service for Windows OS to resolve the IP by the hostnames of the VMs.\\
 And I decide to use this service to easily build **the hostname to IP service**.
