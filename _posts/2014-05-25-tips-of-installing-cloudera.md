@@ -30,6 +30,7 @@ This is the command for the upper steps:
 
 ~~~
 sudo apt-get install ssh
+ssh-keygen -t rsa
 scp  masterIP:/home/user/.ssh/id_rsa.pub ~/.ssh/authorized_keys
 sudo passwd
 ~~~
