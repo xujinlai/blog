@@ -79,4 +79,4 @@ Here are some tips for hostname in **Ubuntu** and installing `Cloudera`:
 
 ### Reference
 
-[^1]: [HowTo: Configure Ubuntu to be able to use and respond to NetBIOS hostname queries like Windows does]{http://www.serenux.com/2009/09/howto-configure-ubuntu-to-be-able-to-use-and-respond-to-netbios-hostname-queries-like-windows-does/}
+[^1]: [HowTo: Configure Ubuntu to be able to use and respond to NetBIOS hostname queries like Windows does](http://www.serenux.com/2009/09/howto-configure-ubuntu-to-be-able-to-use-and-respond-to-netbios-hostname-queries-like-windows-does/)
