@@ -4,7 +4,7 @@ title: "The Tips of Installing Cloudera in Ubuntu"
 description:
 modified: 2014-05-25 15:27:42 +0800
 category: "hadoop"
-tags: [Hadoop, Cloudera]
+tags: [Hadoop, Cloudera, WINS, hostname]
 image:
   feature: http://seeksky.qiniudn.com/19.jpg-clip.jpg
   credit:
@@ -28,7 +28,7 @@ There are several problems dealing with SSH in Ubuntu Desktop Edition.\\
 
 This is the command for the upper steps:
 
-~~~
+~~~ bash
 sudo apt-get install ssh
 ssh-keygen -t rsa
 scp  masterIP:/home/user/.ssh/id_rsa.pub ~/.ssh/authorized_keys
@@ -36,9 +36,47 @@ sudo passwd
 ~~~
 
 ### Tip2: Hosts
-Host IP is not really interesting for me for the sake of the complexity to set it correctly.\\
+Host IP is really not interesting for me for the sake of the complexity to set it correctly.\\
 Because we have not used the DNS resolving service in our cluster, we have to set the `hosts` file manually.\\
 And then use the `scp` tools to copy the file to the slaves.
 
 However, there is an easy solution to solve the problem, WINS. WINS is a service for Windows OS to resolve the IP by the hostnames of the VMs.\\
-And I decide to use this service to easily build **the hostname to IP service**.
+And I use this service to easily build **the hostname to IP service**.
+
+For WINS service, there is a tools in Linux to serve as the same as the WINS service in Windows.\\
+It is called `winbind`. You can easily install this tool by `apt-get` in ubuntu.\\
+And then, you have to edit the `nsswitch.conf` file to add `wins` resolving service after the `dns`.[^1]\\
+In addition, you have to install samba to response the request to get your IP by hostname.
+
+The command in bash to configure and install is here:
+
+~~~ bash
+sudo apt-get install winbind
+sudo vi /etc/nsswitch.conf
+~~~
+
+After these you will see some thing like this:
+
+~~~
+hosts:    files mdns4_minimal [NOTFOUND=return] dns mdns4
+~~~
+
+And then, add `wins` in the end, like this:
+
+~~~
+hosts:    files mdns4_minimal [NOTFOUND=return] dns mdns4 wins
+~~~
+
+With `sudo apt-get install samba`, you can finally `ping` your Linux by hostname.
+
+Here are some tips for hostname in **Ubuntu** and installing `Cloudera`:
+
+ 1. You have to use FQDN in Cloudera, because it uses this to resolve your IP.
+ So just the hostname only like `slave01.local` **type** is suitable.
+ 2. WINS service verifies the **NetBIOS** to resolve the IP
+ and **NetBIOS** must be less than 15 letters. So your hostname have to be less than 15 letters.
+
+
+### Reference
+
+[^1]: [HowTo: Configure Ubuntu to be able to use and respond to NetBIOS hostname queries like Windows does]{http://www.serenux.com/2009/09/howto-configure-ubuntu-to-be-able-to-use-and-respond-to-netbios-hostname-queries-like-windows-does/}
