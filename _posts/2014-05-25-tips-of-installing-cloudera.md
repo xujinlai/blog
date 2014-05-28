@@ -97,7 +97,7 @@ Here is the list of the software you have to check:
 I also met some problems with reinstalling cloudera-manager-server.\\
 I got the error message `cloudera-manager-server file does not exist`.\\
 Because I delete the service file in the directory `/etc/init.d`.\\
-Reinstalling the cloudera-manager-server always get error.
+Reinstalling the cloudera-manager-server always get error.\\
 With the command above by the official document, the problem is easily sovled.
 
 ### Reference
