@@ -76,7 +76,31 @@ Here are some tips for hostname in **Ubuntu** and installing `Cloudera`:
  2. WINS service verifies the **NetBIOS** to resolve the IP
  and **NetBIOS** must be less than 15 letters. So your hostname have to be less than 15 letters.
 
+### Tip3: Reinstall
+There are many problems with reinstalling cloudera-manager-server.\\
+Here is some tips for solving the problems.\\
+Form the official documents, you have to delete the residual files if the installation is aborted intermediately.[^2]\\
+Here is the command:
+
+~~~
+sudo rm -Rf /usr/share/cmf /var/lib/cloudera* /var/cache/yum/cloudera*
+~~~
+
+Then, some more operation you have to do is to check whether the software is removed correctly.\\
+Here is the list of the software you have to check:
+
+ 1. cloudera-manager-server
+ 2. cloudera-manager-agent
+ 3. cloudera-manager-deamon
+ 4. cloudera-manager-server-db-2
+
+I also met some problems with reinstalling cloudera-manager-server.\\
+I got the error message `cloudera-manager-server file does not exist`.\\
+Because I delete the service file in the directory `/etc/init.d`.\\
+Reinstalling the cloudera-manager-server always get error.
+With the command above by the official document, the problem is easily sovled.
 
 ### Reference
 
 [^1]: [HowTo: Configure Ubuntu to be able to use and respond to NetBIOS hostname queries like Windows does](http://www.serenux.com/2009/09/howto-configure-ubuntu-to-be-able-to-use-and-respond-to-netbios-hostname-queries-like-windows-does/)
+[^2]: [Uninstalling Cloudera Manager and Managed Software](http://www.cloudera.com/content/cloudera-content/cloudera-docs/CM5/latest/Cloudera-Manager-Installation-Guide/cm5ig_uninstall_cm.html#cmig_topic_18)
