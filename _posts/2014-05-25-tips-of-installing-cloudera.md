@@ -68,6 +68,7 @@ hosts:    files mdns4_minimal [NOTFOUND=return] dns mdns4 wins
 ~~~
 
 With `sudo apt-get install samba`, you can finally `ping` your Linux by hostname.
+Like this: `ping slave01`.
 
 Here are some tips for hostname in **Ubuntu** and installing `Cloudera`:
 
@@ -75,6 +76,17 @@ Here are some tips for hostname in **Ubuntu** and installing `Cloudera`:
  So just the hostname only like `slave01.local` **type** is suitable.
  2. WINS service verifies the **NetBIOS** to resolve the IP
  and **NetBIOS** must be less than 15 letters. So your hostname have to be less than 15 letters.
+
+However, there is a problem with WINS. It only provide the service to transform
+the NetBIOS to IP address, but not the **FULL HOSTNAME WITH DOMAIN**.\\
+So if your  hostname is FQDN like `slave01.local`, you only get the short hostname `slave01` resolved
+by the WINS service. But the full hostname with domain like `slave01.local` cannot be
+resolved by the service.\\
+So there is a necessary install a DNS service. I choose the `dnsmasq` which is
+a light DNS resolving software and works only using the `hosts` file.
+With this software, you can easily resolve the full hostname to IP address.
+
+
 
 ### Tip3: Reinstall
 There are many problems with reinstalling cloudera-manager-server.\\
