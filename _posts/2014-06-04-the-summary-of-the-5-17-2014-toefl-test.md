@@ -16,7 +16,7 @@ alias: [/2014/06/04/The summary of the 5/17/2014 TOEFL test]
 
 ### Introduction
 I have participated in the `TOEFL` test in May, 17th. It is the third time I have the test.\\
-Though I got the score 88 in this test, the score is not really good far away from my forecasting.\\
+Though I got the score 88 in this test, the score is not really good and far away from my forecasting.\\
 So I want to record the experience here and this will motivate me to get better.
 Moreover, I make up my mind to write in English in the blog.
 Please supervise me, thank you.
