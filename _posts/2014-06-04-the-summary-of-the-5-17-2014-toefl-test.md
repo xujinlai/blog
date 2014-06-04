@@ -9,6 +9,7 @@ image:
   feature: http://seeksky.qiniudn.com/19.jpg-clip.jpg
   credit:
   creditlink:
+  background: congruent.png
 comments: true
 share: true
 alias: [/2014/06/04/The summary of the 5/17/2014 TOEFL test]
