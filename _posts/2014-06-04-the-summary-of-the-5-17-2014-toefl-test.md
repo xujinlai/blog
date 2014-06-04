@@ -6,7 +6,7 @@ modified: 2014-06-04 09:26:10 +0800
 category: "status"
 tags: [English,TOEFL]
 image:
-  feature: http://seeksky.qiniudn.com/19.jpg-clip.jpg
+  feature: http://seeksky.qiniudn.com/48.jpg-clip.jpg
   credit:
   creditlink:
   background: congruent.png
