@@ -35,4 +35,4 @@ mvn install -DskipTests
 ~~~
 
 You may with some errors telling you that some tools must be installed before compiling.\\
-Just like Findbugs and Protobuf
+Just like Findbugs and Protobuf, they can be easily installed by yourself.
