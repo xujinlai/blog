@@ -40,9 +40,9 @@ bing_verify:
 # Links to include in top navigation
 # For external links add external: true
 links:
-  - title: BAE Blog(abandon)
-    url: http://seeksky.duapp.com
-    external: true
+  #- title: BAE Blog(abandon)
+  #  url: http://seeksky.duapp.com
+  # external: true
 
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 timezone:    Asia/Shanghai
