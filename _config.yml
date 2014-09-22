@@ -1,5 +1,5 @@
 title:            Seeksky's Blog
-description:      技术宅征服世界
+description:      技术宅征服世界(Technique nerds conquer the world)
 disqus_shortname: xujinlai
 comments: true
 share: true
@@ -10,7 +10,7 @@ relative_permalinks: true
 
 # Owner/author information
 owner:
-  name:           徐锦来 (Seeksky)
+  name:           Jinlai Xu (Seeksky)
   avatar:         avatar.jpg
   bio:            "My name is Xu Jinlai, you can call me Seeksky(my nickname) or Andy(my official english name). My favourite is computer and every thing related to it."
   email:          xujinlai@gmail.com
