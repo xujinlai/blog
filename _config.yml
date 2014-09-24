@@ -32,7 +32,7 @@ feature: http://seeksky.qiniudn.com/19.jpg-clip.jpg
 qiniu: http://seeksky.qiniudn.com
 
 # Analytics and webmaster tools stuff goes here
-google_analytics:   UA-46212341-3
+google_analytics:   UA-46212341-5
 google_verify:      
 # https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
 bing_verify:         
