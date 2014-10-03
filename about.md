@@ -9,39 +9,57 @@ image:
   creditlink: http://www.dargadgetz.com/ios-7-abstract-wallpaper-pack-for-iphone-5-and-ipod-touch-retina/
 share: true
 ---
+# Jinlai Xu
+------
+![JinlaiXu Image]({{ site.url }}/images/psb-s.jpg)
+{: .pull-right}
 
-# **About Seeksky**
+Master Student, Faculty of Information Engineering\\
+Research Assistant, Robotics and Artificial Intelligence Laboratory\\
+China University of Geosciences (CUG)\\
+Email: xujinlai [at] gmail.com\\
+[Full Curriculum Vitae]({{ site.url }}/files/cv_XuJinlai.pdf)
 
-seeksky是我一直使用的nickname，在最初是单纯的喜欢seek和sky这两个单词，但是这两个单词越发给予我力量
+### **RESEARCH INTERESTS:**
+ Cloud Computing, Machine Learning, Computer Vision, Robotics.
 
-# **About Me**
 
-## **Name**
+### **EDUCATION:**
+September 2012 - Present: Master (expected), Software Engineering  **China University of Geosciences  (211)**      Advisor:  [Zhongwen Luo](http://xgxy.cug.edu.cn/rjgcx/lzw/)
 
-Jinlai Xu
+September 2008 - July 2012: Bachelor of Engineering in Software Engineering ,**China University of Geosciences  (211)** Advisor:  [Zhongwen Luo](http://xgxy.cug.edu.cn/rjgcx/lzw/)
 
-## **Recent Developments**
+<!--more-->
 
-现在我是中国地质大学（武汉）信息工程学院研二的学生
 
-主要研究方向是云计算基础平台的搭建及优化工作
+### **RESEARCH EXPERIENCE**
+September 2012 - Present: *Research Assistant*,**Robotics and Artificial Intelligence Laboratory**, China University of Geosciences
 
-## **Email**
 
-xujinlai[at]gmail.com
+July 2009 - July 2012: *Undergraduate Research Assistant*,**Robotics and Artificial Intelligence Laboratory**, China University of Geosciences
 
-## **Social Network**
 
-[http://weibo.com/jinlaixu](http://weibo.com/jinlaixu)
+### WORK EXPERIENCE
+ + **Teaching Assistant** ,September 2013 - January 2014
+ + **China University of Geosciences**
+   + Advanced Programming Language (JAVA)
+   + Instructor: Prof. Shengwen Li
 
-## **Hobby**
 
-Cartoon, Computer games, Basketball
+### HONORS & AWARDS
+ + **Outstanding Student Award**, China University of Geosciences, China       2013--2014
+ + **Graduate Student First-class Scholarship(per year)**, China University of Geosciences, China                2012--2014
+ + **CUG First-class Scholarship (per semester)**, China University of Geosciences, China       2008--2011
+ + **Fellows Scholarship**, China University of Geosciences, China       2010--2011
+ + **National Scholarship**, Ministry of Education, China                2009-2010
+ + **The Second Place of AndroSot(Full-autonomous 3vs3 Humanoid Robot Soccer)**, The Robot Soccer Tournament of China and The Tryouts for FIRA in Changchun                                    2009
+ + **The First Prize of AndroSot(Semi-autonomous 3vs3 Humanoid Robot Soccer)**, The Robot Soccer Tournament of China and The Tryouts for FIRA in Changchun                                      2009
 
-&nbsp;
-
-&nbsp;
-
-&nbsp;
-
-论文ing......
+### SKILLS
+ + **Languages**:
+   + Chinese - Native proficiency
+   + English - Professional working proficiency
+ + **Computer**:
+   + **Basic**: JAVA, C++
+   + **Intermediate**: Python, LaTeX, Linux ,Emacs, GitHub, Hadoop, Microsoft Windows,Power Point, Word
+   + **Advanced**: Cloud Computing Infrastructure, Computer Vision}
