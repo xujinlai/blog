@@ -29,7 +29,7 @@ $(function() {
 	$(this).html('<a name="' + id + '"></a>'+$(this).html());
     });
 
-    var outline_ul = $('<ul style="list-style-type: none"></ul>');
+    var outline_ul = $('<ul style="list-style-type: none" margin-top=10px></ul>');
 	outline_ul.append($('<li class="lable" line-height=2em></li>').html('<i class="glyphicon glyphicon-th-list"></i>      TOC'));
 	outline_menu = $('<li class="menu"></li>');
     $.each(dict, function (idx, val) {
@@ -39,7 +39,7 @@ $(function() {
 	outline_ul.append(outline_menu);
     $('#main').append($('<nav id="h2outline"></nav>')
                          .css('position', 'absolute')
-                         .css('width', '175px')
+                         .css('width', '180px')
 						 .css('top', $('article').offset().top)
                          .css('text-align', 'left')
                          .html(outline_ul));
