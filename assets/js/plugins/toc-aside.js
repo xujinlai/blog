@@ -43,7 +43,6 @@ $(function() {
                          .css('width', '180px')
 						 .css('top', $('article').offset().top)
                          .css('text-align', 'left')
-						 .css('margin-top','10px')
                          .html(outline_ul));
 
     /**
