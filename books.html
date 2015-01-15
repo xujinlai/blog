@@ -15,18 +15,18 @@ image:
 <article class="hentry">
   <div class="row">
   {% for book in site.books %}
-  <div class="col-sm-6 col-md-4">
-    <div class="thumbnail">
-	  <a href="/books/{{ book.id }}/">
-      <img data-src="/books/{{ book.id }}/cover.jpg">
-      <div class="caption">
-        <h3>{{ book.name }}</h3>
-        <p>{{ book.abstract }}</p>
-        <p><a href="books/{{ book.id }}/" class="btn btn-primary" role="button">Read</a></p>
-      </div>
-	  </a>
-    </div>
-	{% endfor %}
+	  <div class="col-sm-6 col-md-4">
+		<div class="thumbnail">
+		  <a href="/books/{{ book.id }}/">
+		  <img data-src="/books/{{ book.id }}/cover.jpg">
+		  <div class="caption">
+			<h3>{{ book.name }}</h3>
+			<p>{{ book.abstract }}</p>
+			<p><a href="books/{{ book.id }}/" class="btn btn-primary" role="button">Read</a></p>
+		  </div>
+		  </a>
+		</div>
+	  </div>
+  {% endfor %}
   </div>
-</div>
 </article><!-- /.hentry -->
