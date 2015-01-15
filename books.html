@@ -15,18 +15,21 @@ image:
   <h2>Completed</h2>
   <div class="row">
   {% for book in site.books %}
-	{% if book.status == "in-progress" %}
+	{% if book.status == "completed" %}
 	  <div class="col-sm-6 col-md-4">
 		<div class="thumbnail">
 		  <a href="/books/{{ book.id }}/">
 		  <img src="/books/{{ book.id }}/cover.jpg">
+		  </a>
 		  <div class="caption">
+		    <a href="/books/{{ book.id }}/">
 			<h3>{{ book.name }}</h3>
+			</a>
 			<h4>{{ book.author }}</h4>
 			<p>{{ book.abstract | strip_html | strip_newlines | truncate: 120 }}</p>
 			<p><a href="/books/{{ book.id }}/" class="btn btn-primary" role="button">Read</a></p>
 		  </div>
-		  </a>
+		  
 		</div>
 	  </div>
 	{% endif %}
@@ -35,18 +38,20 @@ image:
   <h2>In Progress</h2>
   <div class="row">
   {% for book in site.books %}
-	{% if book.status == "completed" %}
+	{% if book.status == "in-progress" %}
 	  <div class="col-sm-6 col-md-4">
 		<div class="thumbnail">
 		  <a href="/books/{{ book.id }}/">
 		  <img src="/books/{{ book.id }}/cover.jpg">
+		  </a>
 		  <div class="caption">
+		    <a href="/books/{{ book.id }}/">
 			<h3>{{ book.name }}</h3>
+			</a>
 			<h4>{{ book.author }}</h4>
 			<p>{{ book.abstract | strip_html | strip_newlines | truncate: 120 }}</p>
 			<p><a href="/books/{{ book.id }}/" class="btn btn-primary" role="button">Read</a></p>
 		  </div>
-		  </a>
 		</div>
 	  </div>
 	{% endif %}
@@ -60,13 +65,15 @@ image:
 		<div class="thumbnail">
 		  <a href="/books/{{ book.id }}/">
 		  <img src="/books/{{ book.id }}/cover.jpg">
+		  </a>
 		  <div class="caption">
+		    <a href="/books/{{ book.id }}/">
 			<h3>{{ book.name }}</h3>
+			</a>
 			<h4>{{ book.author }}</h4>
 			<p>{{ book.abstract | strip_html | strip_newlines | truncate: 120 }}</p>
 			<p><a href="/books/{{ book.id }}/" class="btn btn-primary" role="button">Read</a></p>
 		  </div>
-		  </a>
 		</div>
 	  </div>
 	{% endif %}
