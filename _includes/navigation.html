@@ -52,7 +52,7 @@
 			</ul>
 		</li>
 		<li>
-			<a href="{{ site.url }}/books/"><span class="glyphicon glyphicon-book"></span>Books</a>
+			<a href="{{ site.url }}/books/"><i class="glyphicon glyphicon-book"></i>Books</a>
 		</li>
 		{% for link in site.links %}<li>{% if link.external %}<a href="{{ link.url }}">{{ link.title }}</a>{% else %}<a href="{{ site.url }}{{ link.url }}">{{ link.title }}</a>{% endif %}</li>{% endfor %}
 	</ul><!-- /.dl-menu -->
