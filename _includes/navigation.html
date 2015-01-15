@@ -52,12 +52,7 @@
 			</ul>
 		</li>
 		<li>
-			<a href="#"><i class="icon-star"></i>Posts</a>
-			<ul class="dl-submenu">
-				<li><a href="{{ site.url }}/archive/"><i class="icon-arrow-right"></i>All Posts</a></li>
-				<li><a href="{{ site.url }}/tags/"><i class="icon-tags"></i>All Tags</a></li>
-				<li><a href="{{ site.url }}/categories/"><i class="icon-folder-open"></i>All Categories</a></li>
-			</ul>
+			<a href="{{ site.url }}/books/"><span class="glyphicon glyphicon-book"></span>Books</a>
 		</li>
 		{% for link in site.links %}<li>{% if link.external %}<a href="{{ link.url }}">{{ link.title }}</a>{% else %}<a href="{{ site.url }}{{ link.url }}">{{ link.title }}</a>{% endif %}</li>{% endfor %}
 	</ul><!-- /.dl-menu -->
