@@ -30,7 +30,7 @@ $(function() {
     });
 
     var outline_ul = $('<ul style="list-style-type: none"></ul>');
-	outline_ul.append($('<li class="lable"></li>').html('<i class="glyphicon glyphicon-th-list"></i>      TOC')
+	outline_ul.append($('<li class="lable"></li>').html('<i class="glyphicon glyphicon-list"></i>      TOC')
 														.css('margin-top','10px'));
 	outline_menu = $('<li class="menu"></li>');
     $.each(dict, function (idx, val) {
