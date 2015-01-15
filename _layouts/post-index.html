@@ -38,7 +38,9 @@
   </footer>
 </div><!-- /.footer-wrapper -->
 
-{% include scripts.html %}          
+{% include scripts.html %}
+{% if page.is-toc %}  
 <script src="{{ site.url }}/assets/js/plugins/toc-aside.js"></script>
+{% endif %}
 </body>
 </html>
