@@ -1,9 +1,6 @@
 [submodule "books/TAR-Does-God-Play-Dice"]
 	path = books/TAR-Does-God-Play-Dice
 	url = https://github.com/xujinlai/TAR-Does-God-Play-Dice.git
-[submodule "books/git-book"]
-	path = books/git-book
-	url = https://github.com/xujinlai/git.git
 [submodule "books/gitbook-documentation"]
 	path = books/gitbook-documentation
 	url = https://github.com/xujinlai/documentation.git
