@@ -29,8 +29,8 @@ $(function() {
 	$(this).html('<a name="' + id + '"></a>'+$(this).html());
     });
 
-    var outline_ul = $('<ul style="list-style-type: none" margin-top=10px></ul>');
-	outline_ul.append($('<li class="lable" line-height=2em></li>').html('<i class="glyphicon glyphicon-th-list"></i>      TOC'));
+    var outline_ul = $('<ul style="list-style-type: none"></ul>');
+	outline_ul.append($('<li class="lable"></li>').html('<i class="glyphicon glyphicon-th-list"></i>      TOC'));
 	outline_menu = $('<li class="menu"></li>');
     $.each(dict, function (idx, val) {
         outline_menu.append($('<li></li>')
@@ -42,6 +42,7 @@ $(function() {
                          .css('width', '180px')
 						 .css('top', $('article').offset().top)
                          .css('text-align', 'left')
+						 .css('margin-top','10px')
                          .html(outline_ul));
 
     /**
