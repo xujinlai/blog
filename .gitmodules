@@ -4,3 +4,6 @@
 [submodule "books/gitbook-documentation"]
 	path = books/gitbook-documentation
 	url = https://github.com/xujinlai/documentation.git
+[submodule "books/ProGit"]
+	path = books/ProGit
+	url = https://github.com/xujinlai/git.git
