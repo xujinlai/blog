@@ -6,7 +6,7 @@ modified: 2015-09-14 17:09:58 +0800
 category: "Talks"
 tags: [Talks,Security,Fred Schneider]
 image:
-  feature: http://seeksky.qiniudn.com/30.jpg-clip.jpg
+  feature: http://seeksky.qiniudn.com/32.jpg-clip.jpg
   credit:
   creditlink:
 comments: true
@@ -21,4 +21,4 @@ Cybersecurity today is focused largely on defending against known attacks. We le
 ### Thoughts
 Security is a difficult question for all the systems. The philosophy aspect of security is also an important question every scientist in this area want to answer perfectly.
 
-CIA(confidentiality, integrity, and availability) is the basic priciple for security. There is a possibility that scienctist can design a law to define the security, which is the ultimate goal in this area. If this is done, every system can make sure its security by obey this laws.
+CIA(confidentiality, integrity, and availability) is the basic principle for security. There is a possibility that scientists can design a law to define the security, which is the ultimate goal in this area. If this is done, every system can make sure its security by obey this laws.

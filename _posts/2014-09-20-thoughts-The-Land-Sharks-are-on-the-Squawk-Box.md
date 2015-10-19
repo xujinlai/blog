@@ -6,7 +6,7 @@ modified: 2015-09-20 17:09:58 +0800
 category: "Talks"
 tags: [Talks,Postgresql,MICHAELS_TONEBRAKER]
 image:
-  feature: http://seeksky.qiniudn.com/30.jpg-clip.jpg
+  feature: http://seeksky.qiniudn.com/32.jpg-clip.jpg
   credit:
   creditlink:
 comments: true
