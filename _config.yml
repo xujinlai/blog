@@ -72,7 +72,7 @@ links:
   # external: true
 
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-timezone:    Asia/Shanghai
+timezone:    US/Eastern
 future:      true
 pygments:    true
 markdown:    kramdown
