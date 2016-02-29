@@ -5,7 +5,6 @@ comments: true
 share: true
 #Your site's domain goes here. Leave localhost server or blank when working locally.
 url:              http://jinlaixu.net
-relative_permalinks: true
 
 
 # Owner/author information
