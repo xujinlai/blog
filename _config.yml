@@ -74,8 +74,9 @@ links:
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 timezone:    US/Eastern
 future:      true
-pygments:    true
+#pygments:    true
 markdown:    kramdown
+highlighter: rouge
 
 redcarpet:
   extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "with_toc_data", "strikethrough","superscript"]
