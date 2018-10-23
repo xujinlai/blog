@@ -56,7 +56,7 @@ projects:
 
 # Background image to be tiled on all pages
 background: ps_neutral.png
-feature: {{ site.url }}/images/19.jpg-clip.jpg
+feature: {{ site.url }}/images/19.jpg
 qiniu: {{ site.url }}/images
 
 # Analytics and webmaster tools stuff goes here

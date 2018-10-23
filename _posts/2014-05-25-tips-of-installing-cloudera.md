@@ -6,7 +6,7 @@ modified: 2014-05-25 15:27:42 +0800
 category: "hadoop"
 tags: [Hadoop, Cloudera, WINS, hostname]
 image:
-  feature: {{ site.url }}/images/19.jpg-clip.jpg
+  feature: {{ site.url }}/images/19.jpg
   credit:
   creditlink:
 comments: true
