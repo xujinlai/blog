@@ -6,7 +6,7 @@ modified: 2014-04-19 14:18:02 +0800
 category: "AI"
 tags: [ROS,D Star,navigation]
 image:
-  feature: http://seeksky.qiniudn.com/19.jpg-clip.jpg
+  feature: {{ site.url }}/images/19.jpg-clip.jpg
   credit:
   creditlink:
 comments: true

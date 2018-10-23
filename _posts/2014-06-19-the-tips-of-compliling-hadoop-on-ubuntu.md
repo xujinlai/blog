@@ -6,7 +6,7 @@ modified: 2014-06-19 17:09:58 +0800
 category:
 tags: [Hadoop,MapReduce,Ubuntu,Compiling,Src]
 image:
-  feature: http://seeksky.qiniudn.com/19.jpg-clip.jpg
+  feature: {{ site.url }}/images/19.jpg-clip.jpg
   credit:
   creditlink:
 comments: true

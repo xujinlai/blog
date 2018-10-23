@@ -6,7 +6,7 @@ modified: 2015-10-10 17:09:58 +0800
 category: "Talks"
 tags: [Talks,BigData,Anthony Fung]
 image:
-  feature: http://seeksky.qiniudn.com/32.jpg-clip.jpg
+  feature: {{ site.url }}/images/32.jpg-clip.jpg
   credit:
   creditlink:
 comments: true
